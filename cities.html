@@ -91,7 +91,9 @@
   </head>
   <body>
     <div id="container">
-      <h1>Cartograms with d3 &amp; TopoJSON</h1>
+      <h1>中国城市新闻地图</h1>
+      <h3>News Map of China Cities</h3>
+
       <form>
         <p>
           <label>Scale by <select id="field"></select></label>
@@ -103,19 +105,26 @@
         <img id="placeholder" alt="placeholder image for old browsers" src="placeholder.png">
         <svg id="map"></svg>
       </div>
-            <div id="about">
+      <div id="guan'yu">
+        <h2>介绍</h2>
+        <p>新闻地图建立在
+        <a href="cartogram.js">cartogram.js</a> (一个应用
+        <a href="http://lambert.nico.free.fr/tp/biblio/Dougeniketal1985.pdf">算法构建连续性区域统计地图的javascript库</a> &copy;1985)、 <a href="http://d3js.org">d3.js</a> 和 <a href="http://colorbrewer2.org">colorbrewer</a>。这个可视化综合了
+        <a href="http://github.com/mbostock/topojson">TopoJSON的地理数据</a>和随机生成的城市数据
+        来按比例调整大小。新闻地图是由王成军和陈志聪搭建，&copy;</a> 南京大学新闻传播学院，
+        <a href="http://ccc.nju.edu.cn:8089/">计算传播学实验中心</a>。</p>
+      </div>
+      <div id="about">
         <h2>About</h2>
         <p>News Map is built upon 
-        <a href="cartogram.js">cartogram.js</a>(a JavaScript implementation of
-        <a href="http://lambert.nico.free.fr/tp/biblio/Dougeniketal1985.pdf">an algoritm to construct continuous area cartograms</a> &copy;1985), <a href="http://d3js.org">d3.js</a> and <a href="http://colorbrewer2.org">colorbrewer</a>.</p>
+        <a href="cartogram.js">cartogram.js</a> (a JavaScript implementation of
+        <a href="http://lambert.nico.free.fr/tp/biblio/Dougeniketal1985.pdf">an algoritm to construct continuous area cartograms</a> &copy;1985), <a href="http://d3js.org">d3.js</a> and <a href="http://colorbrewer2.org">colorbrewer</a>.
         This visualization combines
-        <a href="http://github.com/mbostock/topojson">TopoJSON</a>-encoded 
-        boundaries of the Chinese provinces with GDP data from
-        <a href="http://www.stats.gov.cn/">National Bureau Statistics of the People's Republic of China</a>
-        to size each province proportionally.</p>
+        <a href="http://github.com/mbostock/topojson">TopoJSON</a> and randomly generated city data
+        to size each part proportionally.
 
-        <p>Designed and built by Chengjun Wang and Zhicong Chen</a> at
-        <a href="http://ccc.nju.edu.cn:8089/">Computational Communication Collaboratory</a>, Nanjing University.
+        Designed and built by Chengjun Wang and Zhicong Chen</a> at
+        <a href="http://ccc.nju.edu.cn:8089/">Computational Communication Collaboratory</a>, School of Journalism and Communication, Nanjing University.</p>
       </div>
     </div>
     <script>
